@@ -25,7 +25,7 @@ pub fn hash(key: u128) -> u64 {
     let w3 = (key >> 96) as u32;
     let w2 = ((key & 0x00000000_ffffffff_00000000_00000000) >> 64) as u32;
     let w1 = ((key & 0x00000000_00000000_ffffffff_00000000) >> 32) as u32;
-    let w0 = ((key & 0x00000000_00000000_00000000_ffffffff) as u32).to_le();
+    let w0 = (key & 0x00000000_00000000_00000000_ffffffff) as u32;
     let mut a = (w0 as u64) << 32 | w3 as u64;
     let mut b = (w1 as u64) << 32 | w2 as u64;
     (a, b) = mum(a ^ MAGIC[1], b ^ MAGICSEED);
