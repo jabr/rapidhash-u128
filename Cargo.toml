@@ -1,6 +1,8 @@
 [package]
 name = "rapidhash"
 version = "0.1.0"
+license = "MIT"
 edition = "2021"
+description = "Limited Rapidhash implementation for u128 values"
 
 [dependencies]
