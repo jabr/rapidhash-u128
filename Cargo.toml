@@ -4,5 +4,6 @@ version = "0.1.0"
 license = "MIT"
 edition = "2021"
 description = "Limited Rapidhash implementation for u128 values"
+repository = "https://github.com/jabr/rapidhash-u128"
 
 [dependencies]

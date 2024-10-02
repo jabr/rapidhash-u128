@@ -1,4 +1,4 @@
-# u128 rapidhash
+# rapidhash-u128
 
 Bare-bones Rust implementation of rapidhash for u128 values, based on original [rapidhash implementation in C](https://github.com/Nicoshev/rapidhash).
 
