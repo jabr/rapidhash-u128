@@ -40,6 +40,7 @@ mod tests {
     fn it_hashes_as_expected() {
         assert_eq!(                                    hash(0),  8755926293314635566);
         assert_eq!(                                    hash(1), 17996969877019643443);
+        assert_eq!(                                 hash(0xff),  5200326291411116507);
         assert_eq!(                               hash(0x1000),  3752997491443908878);
         assert_eq!(                          hash(0x1000_0000),  1347028408682550078);
         assert_eq!(                  hash(0x10000000_00000000),  3593052489046108800);
