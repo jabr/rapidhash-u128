@@ -1,4 +1,4 @@
-use rapidhash::*;
+use rapidhash_u128::*;
 use std::env;
 
 fn main() {
